@@ -72,9 +72,6 @@ public:
   /// Access no writers generation count
   size_t no_writers_generation_count() const;
 
-  RepoIdSet::const_iterator writers_begin() const { return writers_.begin(); }
-  RepoIdSet::const_iterator writers_end() const { return writers_.end(); }
-
   /// DISPOSE message received for this instance.
   /// Return flag indicates whether the instance state was changed.
   /// This flag is used by concrete DataReader to determine whether
